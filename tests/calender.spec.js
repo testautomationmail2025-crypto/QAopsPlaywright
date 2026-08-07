@@ -15,6 +15,7 @@ test("calender test", async ({ page }) => {
     .locator(".react-calendar__tile")
     .nth(Number(monthNumber) - 1)
     .click();
+
   //await page.locator("//abbr[text()='" + date + "']").click();
   await page.getByLabel("June 30, 2028", { exact: true }).click();
 
